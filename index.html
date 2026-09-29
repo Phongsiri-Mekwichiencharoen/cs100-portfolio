@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1project</title>
+    <link rel="stylesheet" href="css/style1dark.css">
+</head>
+
+<body>
+
+    <div class="pagecolor">
+    <header class="navbar">
+        <h1> My First Learning Portfolio </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#built">What I Built</a></li>
+                <li><a href="#how">How I Built It</a></li>
+                <li><a href="#reflection">Reflection</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2> About Me </h2>
+        <div>
+            <img src="medias/6909617489.jpg" alt="รูปโปรไฟล์นักศึกษา" class="profile-img">
+            <div>
+                <p><strong>ชื่อ-นามสกุล:</strong> นายพงศ์ศิริ เมฆวิเชียรเจริญ</p>
+                <p><strong>รหัสนักศึกษา:</strong> 6909617489</p>
+                <p><strong>สาขาวิชา:</strong> วิทยาการคอมพิวเตอร์</p>
+                <p><strong>อีเมล:</strong> phongsiri.mek@dome.tu.ac.th</p>
+                <p>สวัสดีครับ ผมเป็นนักศึกษาที่สนใจการพัฒนาเว็บและออกแบบประสบการณ์ผู้ใช้ (UX/UI) งานอดิเรกคือการเล่นเกมและฟังเพลง</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="built">
+        <h2> What I Built </h2>
+        <p>เว็บไซต์นี้คือ <strong>Learning Portfolio</strong> แบบ single-page โดยมีเนื้อหาหลัก ได้แก่ Navigation, ข้อมูลส่วนตัว, รายละเอียดโครงการ, ขั้นตอนการทำงาน, และสิ่งที่ได้เรียนรู้</p>
+            <div class="box">
+                <h3>การทำงานของ Client และ Server</h3>
+                <p>เมื่อเปิดไฟล์เว็บไซต์นี้จากเครื่องคอมพิวเตอร์ตนเอง (ดับเบิลคลิกไฟล์ <code>index.html</code>) <strong>ยังไม่เกิดการทำงานระหว่าง Client และ Server</strong> เหตุผลคือเว็บเบราว์เซอร์ทำหน้าที่อ่านไฟล์ HTML/CSS จากฮาร์ดดิสก์ผ่านข้อกำหนด <code>file://</code> โดยตรง <br>
+                (เบราว์เซอร์ทำงานเป็น Client ฝั่งเดียวในการประมวลผลไฟล์) โดยไม่ได้ส่ง Request ผ่านโปรโตคอล HTTP/HTTPS ไปยัง Web Server</p>
+                <!-- *สำรอง*<p><strong>เหตุผล:</strong> เว็บเบราว์เซอร์ทำหน้าที่อ่านไฟล์ HTML/CSS จากฮาร์ดดิสก์ผ่านข้อกำหนด <code>file://</code> โดยตรง (เบราว์เซอร์ทำงานเป็น Client ฝั่งเดียวในการประมวลผลไฟล์) โดยไม่ได้ส่ง Request ผ่านโปรโตคอล HTTP/HTTPS ไปยัง Web Server ใด ๆ</p> -->
+            </div>
+    </section>
+
+    <section id="how">
+        <h2>How I Built It</h2>
+        <p><strong>ขั้นตอนการทำงาน:</strong></p>
+            <ol>
+                <li>เขียนเนื้อหาของหน้า web เบื้องต้น</li>
+                <li>เขียนโครงสร้าง HTML โดยใช้ Semantic tags เพื่อความเป็นระเบียบ</li>
+                <li>สร้างไฟล์ <code>style.css</code> ตกแต่งหน้าตา จัดวาง layout</li>
+            </ol>
+
+        <h3>เครื่องมือและแหล่งข้อมูลที่ใช้</h3>
+            <ul>
+                <li><strong>Code Editor:</strong> Visual Studio Code</li>
+                <li><strong>คู่มืออ้างอิง:</strong> <a href="https://developer.mozilla.org/th/" >MDN Web Docs</a> สำหรับศึกษา HTML/CSS</li>
+                <li><strong>แหล่งข้อมูลเพิ่มเติม:</strong> <a href="https://www.w3schools.com" >W3Schools</a>, Slide Module 02 - 03: Basic HTML & CSSURL</li>
+            </ul>
+    </section>
+
+    <section id="reflection">
+        <h2>Reflection</h2>          
+            <article>
+                <h3>ปัญหาและความท้าทายที่พบ</h3>
+                <p>ปัญหาสำคัญคือการจัดระเบียบองค์ประกอบให้ดูสมดุลและสวยงาม รวมถึงการจัดเมนูให้อยู่ในแถบเดียวกัน วิธีแก้ไขคือศึกษาการใช้ CSS + ให้ Ai ช่วยและทดลองปรับค่าต่างๆผ่าน Live Preview แบบ real-time</p>
+            </article>
+
+            <article>
+                <h3>สิ่งที่เข้าใจมากขึ้นเกี่ยวกับการพัฒนาเว็บ</h3>
+                <p>เข้าใจความสำคัญของการใช้ Semantic HTML ที่ช่วยให้โครงสร้างโค้ดอ่านง่าย เป็นระเบียบ และดีต่อการเข้าถึงมากกว่าการใช้ div ทั้งหมด</p>
+            </article>
+
+            <article>
+                <h3>สิ่งที่อยากปรับปรุงในอนาคต</h3>
+                <p>อยากเพิ่มการรองรับบนมือถือ และเพิ่มลูกเล่นเช่น Animations ด้วย CSS เพื่อให้หน้าเว็บมีความน่าสนใจยิ่งขึ้น</p>
+            </article>
+    </section>
+    </div>
+    
+</body>
+</html>
